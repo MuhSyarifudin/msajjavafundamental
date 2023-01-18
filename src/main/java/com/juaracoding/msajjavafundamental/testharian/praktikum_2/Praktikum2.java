@@ -12,6 +12,9 @@ Version 1.1
 import java.util.Scanner;
 
 public class Praktikum2 {
+    /*
+	Soal Nomor 1 Praktikum 2 Java Fundamental
+    */
     public static void main(String[] args) {
         Scanner sn = new Scanner(System.in);
         int intX = 0;
@@ -36,7 +39,5 @@ public class Praktikum2 {
     }
 }
 
-/*
-	Soal Nomor 1 Praktikum 2 Java Fundamental
-*/
+
 

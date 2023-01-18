@@ -24,7 +24,7 @@ public class Praktikum1 {
         for (int i = 0;i<strKata.length();i++){
             chKata = strKata.charAt(i);
             intX = chKata;
-            if ( (intX>=32 && intX<=64) || (intX>=65 && intX<=90) ) {
+            if ( (intX>=32 && intX<=90) ) {
                 intH += chKata;
             }
         }
