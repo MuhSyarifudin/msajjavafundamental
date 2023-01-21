@@ -1,4 +1,4 @@
-package com.juaracoding.msajjavafundamental.cobacoba.Praktikum_3;
+package com.juaracoding.msajjavafundamental.cobacoba.praktikum_3;
 /*
 Created By IntelliJ IDEA 2022.3.1 (Community Edition)
 Build #IC-223.8214.52, built on December 20, 2022
@@ -8,8 +8,6 @@ Created on 19/01/2023 22:21
 @Last Modified 19/01/2023 22:21
 Version 1.1
 */
-
-import org.w3c.dom.ls.LSOutput;
 
 import java.util.Scanner;
 
