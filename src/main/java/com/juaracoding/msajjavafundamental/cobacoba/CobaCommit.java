@@ -15,4 +15,8 @@ public class CobaCommit {
     public static void main(String[] args) {
 
     }
+    public static double kaliTiga(double angka){
+        double hasil = angka * 3;
+        return hasil;
+    }
 }

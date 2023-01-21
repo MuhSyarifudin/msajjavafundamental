@@ -16,30 +16,59 @@ public class Praktikum3 {
     */
     public static void main(String[] args) {
         Random ran = new Random();
+        String strA = "";
+        char strB;
         int intAngkaRandom = 0;
         do {
-        intAngkaRandom = ran.nextInt(25);
-        } while (intAngkaRandom<12);
+            intAngkaRandom = ran.nextInt(25);
+        } while (intAngkaRandom < 12);
 
-        for (int i = 0; i < intAngkaRandom;i++){
-
-            if (i == 0) {
-                String strHrfawl = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-                int intHrfAwl = ran.nextInt(26);
-                System.out.print(strHrfawl.charAt(intHrfAwl));
-            }
-            else if (i>0){
-                if (i%2==0) {
-                    String strKonsonan = "abcdefghijklmnopqrstuvwxyz";
-                    int intKonsonan = ran.nextInt(26);
-                    System.out.print(strKonsonan.charAt(intKonsonan));
+        for (int j = 0; j < 10; j++) {
+            for (int i = 0; i < intAngkaRandom; i++) {
+                if (i < 7) {
+                    if (i == 0) {
+                        String strHrfawl = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+                        int intHrfAwl = ran.nextInt(26);
+                        strB = strHrfawl.charAt(intHrfAwl);
+                        strA = String.valueOf(strB);
+//                        System.out.println("Karakter yang dihasilkan dari angka random "+intAngkaRandom);
+                        System.out.print(strHrfawl.charAt(intHrfAwl));
+                    } else if (i < 7) {
+                        if (strA.equals("A") || strA.equals("I") || strA.equals("U") || strA.equals("E") || strA.equals("O")) {
+                            if (i % 2 == 0) {
+                                String strVokal = "aiueo";
+                                int intVokal = ran.nextInt(5);
+                                System.out.print(strVokal.charAt(intVokal));
+                            } else {
+                                String strKonsonan = "bcdfghjklmnpqrstvwxyz";
+                                int intKonsonan = ran.nextInt(21);
+                                System.out.print(strKonsonan.charAt(intKonsonan));
+                            }
+                        } else {
+                            if (i % 2 == 0) {
+                                String strKonsonan = "bcdfghjklmnpqrstvwxyz";
+                                int intKonsonan = ran.nextInt(21);
+                                System.out.print(strKonsonan.charAt(intKonsonan));
+                            } else {
+                                String strVokal = "aiueo";
+                                int intVokal = ran.nextInt(5);
+                                System.out.print(strVokal.charAt(intVokal));
+                            }
+                        }
+                    }
                 } else {
-                    String strVokal = "aiueo";
-                    int intVokal = ran.nextInt(5);
-                    System.out.print(strVokal.charAt(intVokal));
+                    if (i % 2 == 0) {
+                        String strKonsonan = "abcdefghijklmnopqrstuvwxyz";
+                        int intKonsonan = ran.nextInt(26);
+                        System.out.print(strKonsonan.charAt(intKonsonan));
+                    } else {
+                        String strVokal = "aiueo";
+                        int intVokal = ran.nextInt(5);
+                        System.out.print(strVokal.charAt(intVokal));
+                    }
                 }
             }
+            System.out.println();
         }
-
     }
 }
