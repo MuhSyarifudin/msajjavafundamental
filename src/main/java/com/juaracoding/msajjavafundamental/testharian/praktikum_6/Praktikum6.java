@@ -18,6 +18,7 @@ public class Praktikum6 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        Scanner sn = new Scanner(System.in);
         ArrayList<Integer> intArr = new ArrayList<Integer>();
         int intValue;
         int i = 0;
@@ -36,10 +37,12 @@ public class Praktikum6 {
         }while(j!=-1);
         System.out.println("Angka yang anda inputkan adalah : "+intArr);
         System.out.print("Angka yang dicari adalah : ");
-        intFind = sc.nextInt();
-        for (int k=0;k<=intArr.size();k++){
+        intFind = sn.nextInt();
+        for (int k=0;k<intArr.size();k++){
             if (intFind==intArr.get(k)){
-                System.out.println("Angka "+intFind+" ditemukan pada index ke "+i+"urutan ke "+i+1+" dari data yang di input.");
+                System.out.println("Angka "+intFind+" ditemukan pada index ke "+k+" urutan ke "+(k+1)+" dari data yang di input.");
+                isFound = false;
+                break;
             }
         }
         if (isFound){
