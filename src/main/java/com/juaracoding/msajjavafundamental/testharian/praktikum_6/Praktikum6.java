@@ -26,7 +26,7 @@ public class Praktikum6 {
         int intFind = 0;
         Boolean isFound = true;
 
-        System.out.println("Masukan angka sepuasnya : ");
+        System.out.println("Angka yang anda input adalah : ");
         do {
             try{
             intValue = sc.nextInt();
